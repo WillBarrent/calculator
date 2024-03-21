@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {}
+
+body {
+    box-sizing: border-box;
+
+    height: 100vh;
+    background: linear-gradient(to right bottom, #e7be38, #ec5e60) no-repeat;
+
+    font-family: 'JetBrains Mono';
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    font-family: inherit;
+}
+
+.app {
+    height: 800px;
+    width: 400px;
+
+    padding: 1px;
+
+    background-color: #1b1f35;
+    display: flex;
+    flex-direction: column;
+}
+
+.output {
+    flex: 1 0 30%;
+}
+
+.input {
+    display: flex;
+    align-items: stretch;
+    flex: 1 0 70%;
+}
+
+.section--1, .numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+.numbers-container {
+    display: flex;
+}
+
+.functionality {display: flex;}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+}
+
+.numbers-container button,
+.functionality button,
+.operators button,
+.operators,
+.section--1  {
+    flex: 1 1 80px;
+}
+
+.operators {
+    flex: 1 1 30%;
+}
+
+.section--1 {
+    flex: 1 1 70%;
+}
+
+.section--1 button, .operators button {
+    border: none;
+    outline: none;
+}
+
+.input button {
+    font-size: 22px;
+    background-color: #141C27;
+
+    outline: 1px solid #1C2632;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.functionality, .numbers, .numbers-container {
+    flex: 1;
+}
+
+.functionality {
+    flex: 1 0 20%;
+}
+
+.numbers {
+    flex: 1 0 80%;
+}
+
+.operators button {
+    color: #546171;
+}
+
+button.cancel {
+    color: red;
+}
+
+/* OUTPUT */
+
+.output {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+    color: white;
+
+    font-size: 50px;
+}
